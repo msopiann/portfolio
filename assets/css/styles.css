@@ -61,7 +61,6 @@ nav {
 }
 
 section {
-  width: 95vw;
   height: 95vh;
   display: flex;
   justify-content: center;
@@ -74,6 +73,8 @@ section {
 #home {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-part {
@@ -96,9 +97,8 @@ section {
 }
 
 .profile-data-part {
-  width: 93%;
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .profile-data-part span {
@@ -138,7 +138,10 @@ section {
 }
 
 .cv {
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cv a {
@@ -379,4 +382,58 @@ section {
   position: absolute;
   margin-top: 1.5rem;
   margin-left: 1.5rem;
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.title-skills {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.skill-intermediate,
+.skill-basic {
+  margin: 1rem auto 2rem;
+}
+
+.skill-intermediate h5,
+.skill-basic h5 {
+  color: var(--text-color);
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 60px;
+}
+
+.skill-intermediate h5,
+.skill-basic h5 {
+  margin: 0 auto 1rem;
+  background-color: #2d4263;
+}
+
+.skill-intermediate .skill-stack-intermediate,
+.skill-basic .skill-stack-basic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.skill-intermediate .skill-stack-intermediate img,
+.skill-basic .skill-stack-basic img {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+.skill-intermediate .skill-stack-intermediate .next {
+  filter: brightness(0) invert(1);
 }
