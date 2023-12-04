@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul id="navbar-menu">
+        <li class="navbar-list"><a href="#home">Home</a></li>
+        <li class="navbar-list"><a href="#about">About</a></li>
+        <li class="navbar-list"><a href="#skills">Skills</a></li>
+        <li class="navbar-list"><a href="#projects">Projects</a></li>
+        <li class="navbar-list"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="profile-img-part">
+        <div class="img-part"><img src="assets/img/profile-pic.png" alt="profile-img"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+      </div>
+      <div class="profile-data-part">
+        <p>Hello, I&apos;m <span>Muhammad Sopian</span></p>
+        <h4>Front End Developer</h4>
+        <p class="profile-desc">I am eager to bring my innovative
+          mindset and a keen eye for detail to contribute to web projects. </p>
+
+        <div class="cv">
+          <a href="/assets/docs/resume.pdf">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition -->
+    <div class="transition">
+      <div class="box-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+          style="-webkit-transform: scaleX(-1); transform: scaleX(-1)">
+          <path fill="#fff" fill-opacity="1" d="M0,224L1440,128L1440,320L0,320Z"></path>
+        </svg>
+      </div>
+      <div class="box-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+          style="-webkit-transform: scaleX(1); transform: scaleY(1)">
+          <path fill="#fff" fill-opacity="1" d="M0,224L1440,128L1440,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Circle -->
+    <div id="outer-circle">
+      <div id="inner-circle">
+        <div id="inner-2-circle"></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="about-data-part">
+        <h3>About Me</h3>
+        <p>My academic background in Education of
+          System and
+          Information Technology, along with hands-on experience gained through coursework and personal projects, has
+          equipped me
+          with a solid foundation in HTML, CSS, JavaScript, and responsive design.</p>
+
+        <button id="openModalBtn">See my certification</button>
+
+        <div class="overlay hidden"></div>
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <div class="image-row">
+              <div class="column">
+                <a class="michigan"
+                  href="https://www.coursera.org/account/accomplishments/specialization/CZQKX9DKT933?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+                  target="_blank">
+                  <img src="assets/img/michigan.svg" alt="Michigan Logo">
+
+                  <p>Web Design for Everybody&#8599;
+                  </p>
+                </a>
+
+                <a class="freecodecamp-responsive"
+                  href="https://www.freecodecamp.org/certification/msopiann/responsive-web-design" target="_blank">
+                  <img src="assets/img/freecodecamp.svg" alt="freeCodeCamp Logo">
+
+                  <p>Responsive Web Design&#8599;</p>
+                </a>
+              </div>
+              <div class="column">
+                <a class="ibm"
+                  href="https://www.coursera.org/account/accomplishments/verify/NBY8MNPD25EM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                  target="_blank">
+                  <img src="assets/img/ibm.svg" alt="IBM Logo">
+
+                  <p>Developing Front-End Apps with React&#8599;
+                  </p>
+                </a>
+
+                <a class="freecodecamp-js"
+                  href="https://www.freecodecamp.org/certification/msopiann/javascript-algorithms-and-data-structures"
+                  target="_blank">
+                  <img src="assets/img/freecodecamp.svg" alt="freeCodeCamp Logo">
+
+                  <p>JavaScript Algorithms and Data Structures&#8599;</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-horizontal">
+
+      </div>
+
+      <div class="about-edu-part">
+        <div class="edu-img">
+          <img src="assets/img/education.svg" alt="edu icon">
+        </div>
+        <div class="edu-desc">
+          <h5>Indonesia University of Education</h5>
+          <p>Education of System and Informastion Technology</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="semi-circle">
+      <div class="nested-semi-circle">
+        <div class="nested-nested-semi-circle"></div>
+      </div>
+    </div>
+
+    <section id="skills">Skills</section>
+    <section id="projects">Projects</section>
+    <section id="contact">Contact</section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
