@@ -65,3 +65,40 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Load More
+$(document).ready(function() {
+  $(".item").slice(0,2).fadeIn().css('display', 'flex');
+  $(".load-more").click(function(){
+    $(".item").slice(0,6).fadeIn().css('display', 'flex');
+    $(this).fadeOut();
+  })
+})
+
+// Send email
+var submitEmail = document.getElementById('form-btn');
+
+submitEmail.addEventListener('click', function(event){
+  event.preventDefault()
+  var nama = document.getElementById('name').value;
+  var emailSender = "muhammadsopian901@gmail.com";
+  var emailValue = document.getElementById("email").value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value; 
+
+  let body = `Halo, saya ${nama}. Dengan email ${emailValue} ini saya bermaksud untuk ${message}. Terima kasih.`
+
+
+  Email.send({
+    SecureToken: "d523dd29-4552-4c9c-a6fb-610d3523c463",
+    Host : "smtp.elasticemail.com",
+    Username : "muhammadsopian452@gmail.com",
+    Password : "3D9DC8A819098803F8D288917996D2917648",
+    To : 'muhammadsopian452@gmail.com',
+    From : emailSender,
+    Subject : subject,
+    Body : body
+  }).then(
+  message => alert(message)
+  );
+})
