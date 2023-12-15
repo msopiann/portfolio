@@ -656,6 +656,14 @@ textarea,
     display: none;
     content-visibility: hidden;
   }
+
+  #form-title {
+    font-size: 0.75rem;
+  }
+
+  .my-email p {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (min-width: 961px) {
