@@ -81,7 +81,7 @@ nav {
 }
 
 .profile-img-part img {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -683,6 +683,10 @@ textarea,
     margin-right: 5rem;
   }
 
+  .profile-img-part img {
+    width: 100%;
+  }
+
   #home .profile-data-part p,
   #home .profile-data-part h4,
   #home .profile-data-part {
@@ -719,7 +723,7 @@ textarea,
     flex: 1;
   }
 
-  #about .about-data-part h3{
+  #about .about-data-part h3 {
     text-align: justify;
     width: 80%;
     margin: 0 auto;
@@ -816,7 +820,7 @@ textarea,
     position: relative;
   }
   #projects .item .left .img::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -871,7 +875,7 @@ textarea,
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
 
   /* Contact */
@@ -885,9 +889,7 @@ textarea,
   }
 
   #contact .contact-info h3,
-  #contact .contact-info a{
+  #contact .contact-info a {
     font-size: 1.25rem;
   }
-
-  
 }
